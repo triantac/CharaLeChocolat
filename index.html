@@ -87,9 +87,8 @@
             </div>
         </div>
     </div>
-    <div id="reservemodal" class="modal fade" role="dialog">
+    <!--<div id="reservemodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve your baskets </h4>
@@ -169,7 +168,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> 
                 <div class="modal-footer">
                     <div><button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Submit</button></div>
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
@@ -177,7 +176,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -190,7 +189,7 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 d-flex align-items-center">
-                    <a class="btn btn-warning btn-sm active" data-toggle="modal" data-target="#reservemodal">Reserve
+                    <a class="btn btn-warning btn-sm active" role="button" href="#reservehere">Reserve
                         your baskets</a>
                     <!-- <a class="btn btn-warning btn-sm active" role="button" href="#linkhere" data-toggle="tooltip"
                         data-html="true" title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
@@ -254,14 +253,14 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    <div class="btn-group" id="carouselButtons" >
-                    <button class="btn btn-danger btn-sm" id="carousel-pause">
-                        <span class="fa fa-pause"></span>
-                    </button>
-                    <button class="btn btn-danger btn-sm" id="carousel-play">
-                        <span class="fa fa-play"></span>
-                    </button>
-                </div>
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -326,7 +325,7 @@
             <div class="card border default">
                 <h3 class="card-header bg-warning text-white" id="reserve-form">Reserve your baskets</h3>
                 <div class="card-body">
-                    <form id="linkhere">
+                    <form id="reservehere">
                         <div class="form-group-row">
                             <label class="col-12 col-sm-3">Number of Baskets
                             </label>

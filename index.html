@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    <!--<div id="reservemodal" class="modal fade" role="dialog">
+    <div id="reservemodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                     </form>
-                </div> 
+                </div>
                 <div class="modal-footer">
                     <div><button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Submit</button></div>
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -189,7 +189,7 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 d-flex align-items-center">
-                    <a class="btn btn-warning btn-sm active" role="button" href="#reservehere">Reserve
+                    <a class="btn btn-warning btn-sm active" data-toggle="modal" data-target="#reservemodal">Reserve
                         your baskets</a>
                     <!-- <a class="btn btn-warning btn-sm active" role="button" href="#linkhere" data-toggle="tooltip"
                         data-html="true" title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
@@ -319,74 +319,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row row-content align-items-center justify-content-center">
-        <div class="col col-sm-8">
-            <div class="card border default">
-                <h3 class="card-header bg-warning text-white" id="reserve-form">Reserve your baskets</h3>
-                <div class="card-body">
-                    <form id="reservehere">
-                        <div class="form-group-row">
-                            <label class="col-12 col-sm-3">Number of Baskets
-                            </label>
-                            <div class="col col-sm">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio3" value="option3">
-                                    <label class="form-check-label" for="inlineRadio3">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio4" value="option4">
-                                    <label class="form-check-label" for="inlineRadio4">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio5" value="option5">
-                                    <label class="form-check-label" for="inlineRadio5">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio6" value="option6">
-                                    <label class="form-check-label" for="inlineRadio6">6</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label class="col-12 col-sm-3">Date and Time
-                            </label>
-                            <div class="input-group col-12 col-sm-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="date"><i class="fa fa-calendar"
-                                            aria-hidden="true"></i></span>
-                                </div>
-                                <input type="date" class="form-control" id="dateInput">
-                                <div class="input-group col-12 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="time"><i class="fa fa-clock"
-                                                aria-hidden="true"></i></span>
-                                    </div>
-                                    <input type="time" class="form-control" id="timeInput">
-                                </div>
-                            </div>
-                        </div>
-                        <div><button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <footer class="footer">

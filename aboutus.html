@@ -13,43 +13,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="./aboutus.html"><img src="images/logo.png" height="40" width="54"></a>
+            <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html"> <span class="fa fa-home fa-lg"></span>Home</a>
+                        <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                        <a class="nav-link" href="./menu.html"><span class="fa fa-list fa-lg"></span> Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>Contact</a>
+                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
+                <div class="col-12 col-sm-8">
+                    <h1>Le Chocolat</h1>
+                    <p>We combine experience with creativity to create innovative tastes based on classic chocolate
+                        recipes. Our creations will travel you in the chocolate world!</p>
+                </div>
                 <div class="col col-sm">
                     <img src="images/logo.png" class="img-fluid">
                 </div>
-                <h1>Le Chocolat</h1>
-                <p>We combine experience with creativity to create innovative tastes based on classic chocolate
-                    recipes. Our creations will travel you in the chocolate world!</p>
             </div>
-            <div class="col col-sm">
-            </div>
-        </div>
         </div>
     </header>
 
@@ -78,7 +83,7 @@
                     euismod mi eget dignissim. Sed eget consequat urna. </p>
             </div>
             <div class="card">
-                <h3 class="card-header bg-secondary text-white">Facts At a Glance</h3>
+                <h3 class="card-header bg-light text-white">Facts At a Glance</h3>
                 <div class="card-body">
                     <dl class="row">
                         <dt class="col-6">Started</dt>
@@ -99,7 +104,7 @@
     <div class="row row-content">
         <div class="col-12">
             <h2>Corporate Leadership</h2>
-            <ul class="nav nav-tabs">
+            <!--<ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab"> Jim Alcon, CEO</a>
                 </li>
@@ -112,7 +117,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#tab4" role="tab" data-toggle="tab"> Vasilis Wilson, SC</a>
                 </li>
-            </ul>
+            </ul> 
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
                     <h3>Jim Alcon <small>Chief Executive Officer </small></h3>
@@ -143,9 +148,59 @@
                     <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current trends in pastry and
                         contributes his innovative ideas in our products. </p>
                 </div>
+            </div>-->
+              <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Jim Alcon <small>Chief Executive Officer </small></h4>
+                          </button>
+                     </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p >Jim Alcon is the CEO of our company. He is responsible for the policy and strategy of our company. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>Bill Peterson  <small>Chief Financial Officer </small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p >Bill Peterson is the CFO of our company. He is responsible for all the financial decisions of our company. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4>John Cook <small>Chef</small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p >Our Chef, John Cook has specialized in the production of chocolates and he has created the receipts for our chocolates. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h4>Vasilis Wilson  <small>Sous-chef </small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <p >Vasilis Wilson is well informed of all the current trends in pastry and contributes his innovative ideas in our products. </p>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
             </div>
         </div>
-    </div>
 
     <div class="row row-content">
         <div class="col-12 col-sm-9">
@@ -192,10 +247,10 @@
                 <div class="col-5 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">

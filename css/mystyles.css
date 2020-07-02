@@ -38,10 +38,10 @@ body{
 tr:hover {background-color:#dbb08db0!important}
 
 .tab-content {
-border-left: 1px solid #ddd;
-border-right: 1px solid #ddd;   
-border-bottom: 1px solid #ddd;   
-padding: 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;   
+    border-bottom: 1px solid #ddd;   
+    padding: 10px;
 }
 
 .carousel{
@@ -51,12 +51,17 @@ background: #914d15b0;
 height:200px;   
 }
 .carousel-item img{
+    position: absolute;
+    top:0;
+    left:0;
+    min-height: 200px;
+}
+#carouselButtons{
+right:0px;
 position: absolute;
-top:0;
-left:0;
-min-height: 200px;
+bottom: 0px;
 }
-.carousel-caption{
-    position: right;
-    right: 0px;
-}
+
+#carouselButtons {
+    z-index: +1;
+    }
